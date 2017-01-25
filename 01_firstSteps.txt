@@ -1,0 +1,10 @@
+1. Create repository on GitHub
+2. On local machine configure Git:
+	- git config --global user.name "John"
+	- git config --global user.email John@mail.com
+	- git config --global https.proxy https://proxy.host.com:1111
+	- git config --global --list (-l) to list all config properties
+3. Clone repository: git clone https://someURL.git
+4. Set local config properties in new repository if needed:
+	- git config user.name "Alex"
+	- git config user.email Alex@mail.com
