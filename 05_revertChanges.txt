@@ -1,2 +1,3 @@
 git commit --amend			-get all staging area and changes last commit with this data. Also changes comment.
-
+git reset HEAD <file_name>		-removes changes in file from staging area
+git checkout -- <file_name>		-revert all changes in file(just copy file from last commit)
