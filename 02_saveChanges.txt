@@ -1,0 +1,14 @@
+git status 			-shows which files are changed
+git add <file_name> 		-git stage changes on this file or start watching on the new file
+git status -s (--short) 	-short variant for report. Marks are shown in 2 columns. Firs shows is file 					indexed	and second shows is file has changes.
+			$ git status -s
+			 M README		-modified and not yet indexed
+			MM Rakefile		-modified and indexed, again modified
+			A  lib/git.rb		-new added file
+			M  lib/simplegit.rb	-modified and indexed
+			?? LICENSE.txt		-new untracked file
+git diff 			-shows concrete changes in files which are not indexed yet
+git diff --staged(cached)	-shows indexed changes in files since last commit
+
+git commit -m 'Commit message'	-commit changes with commit message
+git commit -a			-commit all changes in indexed files (skip git add command)
