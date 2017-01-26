@@ -1,0 +1,15 @@
+git log						-shows full list of commits in chronological order
+git log -p					-shows list of commits with changes in each commit
+git log -<number>				-shows last <number> commits
+git log --stat					-shows short statistic about each commit
+git log --pretty=<oneline,short,full,fuller>	-shows log in predefined format
+git log --pretty=format:"%h by %cn, %cr: %s"	-shows log in specified format. Current variant will be:
+							<short commit hash> by <committer_name>, <some days ago>: <Commit message>
+git log --graph					-shows ASCII-grapf of commits. Convenient to use with some short format(oneline...)
+
+git log --since(after)[until(before)]=2.weeks	-shows history according time period
+git log --author(committer) <author_name>	-shows all commit from concrete author(committer)
+git log --grep "text"				-shows commits with text in messages
+git log --all-match				-shows commits by all parameters (like AND)
+git log -S<some_text>				-shows commits where was added <some_text> in files
+git log -- <full_path>				-shows commits which are made in current full_path
