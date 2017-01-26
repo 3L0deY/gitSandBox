@@ -1,0 +1,2 @@
+git commit --amend			-get all staging area and changes last commit with this data. Also changes comment.
+
