@@ -1,0 +1,5 @@
+git rm <file_name>			-removes file from git and from system
+git rm -f <file_name>			-removes modified file with staged changes
+git rm --cached <file_name>		-makes file untracked by git, but leaves file in system
+
+git mv <file_from> <file_to>		-renames file
